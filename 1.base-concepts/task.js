@@ -19,7 +19,6 @@ console.log(solveEquation());
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     let p = percent / 100 / 12;
     if (isNaN(p) || p < 0) {
-        return `false`;
     } else {
         let s = amount - contribution;
         let n = countMonths;
