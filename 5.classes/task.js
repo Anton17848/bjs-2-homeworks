@@ -79,7 +79,7 @@ class PrintEditionItem {
     giveBookByName(bookName) {
       let currentBook = this.findBookBy(`name`, bookName);
       if (currentBook) {
-        this.books.splice(currentBook);
+        this.books.splice(currentBook, 1);
       }
       return currentBook;
     }  
